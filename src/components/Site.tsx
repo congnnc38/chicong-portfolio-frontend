@@ -13,7 +13,7 @@ import { About, Contact, Footer, Skills } from './Sections';
 // Ưu tiên biến NEXT_PUBLIC_SITE_URL, sau đó tên miền chính Vercel tự cung cấp lúc build, cuối cùng là tên miền hiện tại.
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL ??
-  (process.env.VERCEL_PROJECT_PRODUCTION_URL ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}` : 'https://chicong.vercel.app');
+  (process.env.VERCEL_PROJECT_PRODUCTION_URL ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}` : 'https://chicong-portfolio-frontend.vercel.app');
 
 export function siteMetadata(lang: Lang): Metadata {
   const { profile } = getContent(lang);
